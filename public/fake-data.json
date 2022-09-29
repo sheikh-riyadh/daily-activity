@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "img": "./images/wake-up.jpg",
+        "activityName": "Wake-up early",
+        "description": "When you wake up early, you reap the benefits of many good habits, leading to an energetic, well-rested, stress-free, punctual, and healthy you. You get a sense of order in life, making you feel happier",
+        "time": 5
+    },
+    {
+        "id": 2,
+        "img": "./images/study.jpg",
+        "activityName": "Study in morning",
+        "description": "There are many benefits of studying early in the morning as it not only helps you remember better but also keeps your body healthy! Nonetheless, waking up early to study can still be very difficult lest you know how to manage studying in the morning.",
+        "time": 5
+    },
+    {
+        "id": 3,
+        "img": "./images/breakfast.jpg",
+        "activityName": "Break Fast",
+        "description": "Breakfast is often called 'the most important meal of the day', and for good reason. As the name suggests, breakfast breaks the overnight fasting period. It replenishes your supply of glucose to boost your energy levels and alertness, while also providing other essential nutrients required for good health",
+        "time": 8
+    },
+    {
+        "id": 4,
+        "img": "./images/playing.jpg",
+        "activityName": "Playing sports",
+        "description": "Play improves the cognitive, physical, social, and emotional well-being of children and young people. Through play, children learn about the world and themselves. They also learn skills they need for study, work and relationships such as: confidence",
+        "time": 2
+    },
+    {
+        "id": 5,
+        "img": "./images/dinner.jpg",
+        "activityName": "Dinner at night",
+        "description": "Dinner is an important meal, but you can experiment with a range of great foods. Having a healthy dinner is linked to good sleep, good choices at breakfast and lunch, lower inflammation, greater resilience to stress, better digestion, stable blood sugar and lower anxiety",
+        "time": 20
+    },
+    {
+        "id": 6,
+        "img": "./images/sleeping.jpg",
+        "activityName": "Sleeping at night",
+        "description": "In addition to eating healthy foods and exercising, good sleep is vital for your heart health, according to the American Heart Association. Research has shown that insufficient sleep or poor-quality sleep are related to high blood pressure, cardiovascular plaque buildup, and increased cholesterol levels",
+        "time": 8
+    }
+]
