@@ -1,0 +1,23 @@
+.item-container {
+    padding: 20px;
+    border-radius: 15px;
+    background-color: #fff;
+    position: relative;
+    height: 430px;
+}
+
+.item-container img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+button {
+    border: none;
+    padding: 10px 50px;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 20px;
+    background-color: #16CAB3;
+    border-radius: 15px;
+
+}
