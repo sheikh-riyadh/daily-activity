@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react';
-import Header from '../Header/Header';
 import Item from '../Item/Item';
 import './Items.css'
 
 const Items = () => {
 
     const [items, setItems] = useState([])
+    let sum = 0;
 
     useEffect(() => {
         fetch('fake-data.json')
@@ -15,8 +15,12 @@ const Items = () => {
 
 
 
-    const addItemsHandler = (time) => {
-        console.log(time)
+    const [time, setTime] = useState(0)
+
+
+    const addItemsHandler = (activityTime) => {
+        const newTime = time + parseInt(activityTime);
+        setTime(newTime)
     }
     return (
         <div>
@@ -28,7 +32,7 @@ const Items = () => {
                 </div>
 
                 <div className="items-info">
-                    <div>
+                    <div className='position'>
                         <div className="person-container">
                             <img src="images/person.jpg" alt="person" />
                             <div>
@@ -49,6 +53,26 @@ const Items = () => {
                             <div>
                                 <span>23 years</span>
                                 <p>Age</p>
+                            </div>
+                        </div>
+                        <div>
+                            <h4>Add a Break</h4>
+                            <div className='break-container'>
+                                <a href="/30">30</a>
+                                <a href="/10">10</a>
+                                <a href="/50">50</a>
+                                <a href="/5">5</a>
+                            </div>
+                        </div>
+                        <div>
+                            <h4>Activity details</h4>
+                            <div className='activity'>
+                                <p>Activities time</p>
+                                <p>{time} <span>hrs</span></p>
+                            </div>
+                            <div className='break-time'>
+                                <p>Break time</p>
+                                <p>0 <span>Minute</span></p>
                             </div>
                         </div>
                     </div>

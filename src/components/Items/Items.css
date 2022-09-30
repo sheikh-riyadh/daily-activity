@@ -17,6 +17,11 @@
     padding: 15px;
 }
 
+.position {
+    position: sticky;
+    top: 30px;
+}
+
 .person-container {
     display: flex;
     justify-content: center;
@@ -49,4 +54,34 @@
 
 .person-info div p {
     margin-bottom: 2px;
+}
+
+.break-container {
+    background-color: #F2F4FA;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.break-container a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px;
+    background-color: #16CAB3;
+    margin: 5px;
+    color: #222;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    font-weight: 700;
+}
+
+.activity,
+.break-time {
+    display: flex;
+    justify-content: space-between;
+    background-color: #F2F4FA;
+    border-radius: 8px;
+    padding: 10px;
+    margin-top: 20px;
 }
