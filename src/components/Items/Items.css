@@ -86,3 +86,14 @@
     padding: 10px;
     margin-top: 20px;
 }
+
+button {
+    border: none;
+    padding: 10px 50px;
+    bottom: 0;
+    margin-bottom: 20px;
+    background-color: #16CAB3;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-top: 20px;
+}

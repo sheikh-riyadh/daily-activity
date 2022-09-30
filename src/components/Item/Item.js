@@ -9,7 +9,7 @@ const Item = ({ item, addItemsHandler }) => {
             <h3>{activityName}</h3>
             <p>{description.length < 150 ? description : description.slice(0, 150)}</p>
             <h4>Time: {time}</h4>
-            <button onClick={() => addItemsHandler(time)}>Add to list</button>
+            <button className='button' onClick={() => addItemsHandler(time)}>Add to list</button>
         </div>
     );
 };

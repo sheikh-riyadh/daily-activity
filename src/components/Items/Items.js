@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import Item from '../Item/Item';
 import './Items.css'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Items = () => {
 
@@ -49,10 +51,18 @@ const Items = () => {
     }, [])
 
 
+    /* Get time */
     const addItemsHandler = (activityTime) => {
         const newTime = time + parseInt(activityTime);
         setTime(newTime)
     }
+
+
+    /* Notification toast */
+    const notify = () => {
+        toast("Activity has been completed", { position: "top-center" })
+    }
+
     return (
         <div>
             <div className='items-main-container'>
@@ -106,9 +116,11 @@ const Items = () => {
                                 <p>{breakTime} <span>Minute</span></p>
                             </div>
                         </div>
+                        <button onClick={notify}>Acticity Completed</button>
                     </div>
                 </div>
             </div>
+            <ToastContainer></ToastContainer>
         </div>
     );
 };
