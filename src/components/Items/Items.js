@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import Header from '../Header/Header';
 import Item from '../Item/Item';
 import './Items.css'
 
@@ -18,35 +19,37 @@ const Items = () => {
         console.log(time)
     }
     return (
-        <div className='items-main-container'>
-            <div className='items-container'>
-                {
-                    items.map((item) => <Item key={item.id} item={item} addItemsHandler={addItemsHandler}></Item>)
-                }
-            </div>
+        <div>
+            <div className='items-main-container'>
+                <div className='items-container'>
+                    {
+                        items.map((item) => <Item key={item.id} item={item} addItemsHandler={addItemsHandler}></Item>)
+                    }
+                </div>
 
-            <div className="items-info">
-                <div>
-                    <div className="person-container">
-                        <img src="images/person.jpg" alt="person" />
-                        <div>
-                            <p>Sheikh Riyadh</p>
-                            <span><i className="fa-solid fa-location-dot"></i> Puran Dhaka</span>
+                <div className="items-info">
+                    <div>
+                        <div className="person-container">
+                            <img src="images/person.jpg" alt="person" />
+                            <div>
+                                <p>Sheikh Riyadh</p>
+                                <span><i className="fa-solid fa-location-dot"></i> Puran Dhaka</span>
+                            </div>
                         </div>
-                    </div>
 
-                    <div className="person-info">
-                        <div>
-                            <span>60kg</span>
-                            <p>Weight</p>
-                        </div>
-                        <div>
-                            <span>5.8</span>
-                            <p>Hight</p>
-                        </div>
-                        <div>
-                            <span>23 years</span>
-                            <p>Age</p>
+                        <div className="person-info">
+                            <div>
+                                <span>60kg</span>
+                                <p>Weight</p>
+                            </div>
+                            <div>
+                                <span>5.8</span>
+                                <p>Hight</p>
+                            </div>
+                            <div>
+                                <span>23 years</span>
+                                <p>Age</p>
+                            </div>
                         </div>
                     </div>
                 </div>

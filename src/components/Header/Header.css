@@ -1,0 +1,15 @@
+.menu-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 50px;
+    background-color: #16CAB3;
+    font-size: 20px;
+    align-items: center;
+}
+
+.menu-items a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px;
+    color: #222;
+}
