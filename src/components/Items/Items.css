@@ -97,3 +97,26 @@ button {
     cursor: pointer;
     margin-top: 20px;
 }
+
+
+
+/* Mobile responsive */
+
+@media only screen and (max-width: 768px) {
+
+    .items-container,
+    .items-main-container {
+        grid-template-columns: 1fr;
+        padding: 0;
+        margin-top: 10px;
+    }
+}
+
+
+@media only screen and (min-width: 768px) and (max-width:992px) {
+
+    .items-container {
+        grid-template-columns: 1fr 1fr;
+        margin-top: 30px;
+    }
+}
