@@ -63,7 +63,7 @@
     text-align: center;
 }
 
-.break-container a {
+.break-container span {
     text-decoration: none;
     display: inline-block;
     padding: 5px;
@@ -74,6 +74,7 @@
     width: 20px;
     border-radius: 50%;
     font-weight: 700;
+    cursor: pointer;
 }
 
 .activity,

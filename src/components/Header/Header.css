@@ -3,7 +3,7 @@
     justify-content: space-between;
     padding: 15px 50px;
     background-color: #16CAB3;
-    font-size: 20px;
+    font-size: 15px;
     align-items: center;
 }
 
@@ -12,4 +12,7 @@
     display: inline-block;
     padding: 8px;
     color: #222;
+    background-color: #fff;
+    margin-right: 10px;
+    border-radius: 5px;
 }

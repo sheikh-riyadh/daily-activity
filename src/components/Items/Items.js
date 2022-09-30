@@ -5,7 +5,6 @@ import './Items.css'
 const Items = () => {
 
     const [items, setItems] = useState([])
-    let sum = 0;
 
     useEffect(() => {
         fetch('fake-data.json')
@@ -13,9 +12,41 @@ const Items = () => {
             .then(data => setItems(data))
     }, [])
 
-
-
+    /* Here is set time */
     const [time, setTime] = useState(0)
+
+
+    /* Here is set break time */
+    const [breakTime, setBreakTime] = useState(0)
+
+
+
+    /* Local storage */
+    const getLocalStorage = () => {
+        let time = 0;
+
+        const savedTime = localStorage.getItem('time');
+        if (savedTime) {
+            return time = JSON.parse(savedTime)
+        }
+        else {
+            return time;
+        }
+    }
+
+    /* Set break time to local store and  */
+    const setLocalStorage = (result) => {
+        let time = getLocalStorage()
+        time = result;
+        localStorage.setItem('time', JSON.stringify(time))
+        setBreakTime(result)
+    }
+
+    /* setLocalStorage() */
+    useEffect(() => {
+        const result = getLocalStorage()
+        setBreakTime(result)
+    }, [])
 
 
     const addItemsHandler = (activityTime) => {
@@ -58,10 +89,10 @@ const Items = () => {
                         <div>
                             <h4>Add a Break</h4>
                             <div className='break-container'>
-                                <a href="/30">30</a>
-                                <a href="/10">10</a>
-                                <a href="/50">50</a>
-                                <a href="/5">5</a>
+                                <span onClick={() => setLocalStorage(10)}>10</span>
+                                <span onClick={() => setLocalStorage(30)}>30</span>
+                                <span onClick={() => setLocalStorage(50)}>50</span>
+                                <span onClick={() => setLocalStorage(5)}>5</span>
                             </div>
                         </div>
                         <div>
@@ -72,7 +103,7 @@ const Items = () => {
                             </div>
                             <div className='break-time'>
                                 <p>Break time</p>
-                                <p>0 <span>Minute</span></p>
+                                <p>{breakTime} <span>Minute</span></p>
                             </div>
                         </div>
                     </div>
